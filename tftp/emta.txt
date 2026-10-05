@@ -1,0 +1,82 @@
+Main 
+{
+		MtaConfigDelimiter  1;
+		SnmpMibObject pktcMtaDevEnabled.0 Integer 1; /*OID: .1.3.6.1.4.1.7432.1.1.1.6.0*/ 
+		SnmpMibObject ifAdminStatus.9 Integer 1; /*OID: .1.3.6.1.2.1.2.2.1.7.9*/ 
+		SnmpMibObject sipDeviceConfigToTagMatchingEnabled.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.34.0*/ 
+		SnmpMibObject emtaSignalingT38FaxRelaySupport.0 Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.4.14.0*/ 
+		SnmpMibObject sipDeviceConfigSetSdpAllCapsEnabled.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.36.0*/ 
+		SnmpMibObject sipEndPntConfigUserDataMode.9 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.11.9*/ 
+		SnmpMibObject sipEndPntConfigUserUseCodecTable.9 Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.10.9*/ 
+		SnmpMibObject emtaSignalingEndptCtrlToneDetectionControl.9 Integer 1; /*OID: .1.3.6.1.4.1.4684.38.2.2.2.1.6.4.1.1.12.9*/ 
+		SnmpMibObject sipEndPntConfigRegistrarId.9 String "192.168.35.10" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.1.1.1.9*/ 
+		SnmpMibObject sipEndPntConfigProxyId.9 String "192.168.35.10" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.2.1.1.9*/ 
+		SnmpMibObject sipEndPntConfigUserId.9 String "101" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.1.9*/ 
+		SnmpMibObject sipEndPntConfigUserName.9 String "101" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.2.9*/ 
+		SnmpMibObject sipEndPntConfigUserAuthName.9 String "101" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.4.9*/ 
+		SnmpMibObject sipEndPntConfigUserPassword.9 String "101101" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.3.9*/ 
+		SnmpMibObject sipEndPntConfigUserDigitMap.9 String "[0-9*#].T" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.5.9*/ 
+		SnmpMibObject sipEndPntConfigUserDataMode.9 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.11.9*/ 
+		SnmpMibObject sipEndPntConfigUserVADMode.9 Integer 0; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.9.9*/ 
+		SnmpMibObject sipEndPntConfigUserPreferredVBDCodec.9 Integer 0; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.28.9*/ 
+		SnmpMibObject sipDeviceConfigSetSdpAllCapsEnabled.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.36.0*/ 
+		SnmpMibObject sipEndPntConfigUserCustomRingbackOnNet.9 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.3.1.19.9*/ 
+		SnmpMibObject emtaSignalingRtpBaseReceiveUdpPort.0 Gauge32 5004; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.4.11.0*/ 
+		SnmpMibObject emtaCountryCode.0 String "CB" ; /*OID: .1.3.6.1.4.1.4684.51.6.51.0*/ 
+		SnmpMibObject pktcSigDevEchoCancellation.0 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.1.2.0*/ 
+		SnmpMibObject pktcSigDevSilenceSuppression.0 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.1.3.0*/ 
+		SnmpMibObject sipDeviceConfigReregistrationThreshold.0 Gauge32 60; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.29.0*/ 
+		SnmpMibObject sipDeviceConfigRegistrationExpiry.0 Gauge32 3600; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.5.0*/ 
+		SnmpMibObject sipEndPntConfigCodecType.9.1 Integer 6; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.5.1.2.9.1*/ 
+		SnmpMibObject sipEndPntConfigCodecType.9.2 Integer 9; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.5.1.2.9.2*/ 
+		SnmpMibObject sipEndPntConfigCodecType.9.3 Integer 3; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.2.5.1.2.9.3*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.callwaiting Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.11*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.threeway Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.14*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.callTransfer Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.15*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.clidBlock Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.1*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.forwardingToNumber Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.5*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.forwardingPermanent Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.6*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.forwardingNoAnswer Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.7*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.forwardingBusy Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.8*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.autoRedial Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.9*/ 
+		SnmpMibObject sipCallFeatureEnabled.9.lastCallReturn Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.2.9.10*/ 
+		SnmpMibObject emtaSignalingDtmfToneRelayRFC2833Support.0 Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.4.8.0*/ 
+		SnmpMibObject sipCallFeatureEnableVSC.9.callwaiting String "*51" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.3.9.11*/ 
+		SnmpMibObject sipCallFeatureDisableVSC.9.callwaiting String "*50" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.4.9.11*/ 
+		SnmpMibObject pktcNcsEndPntConfigCallWaitingMaxRep.9 Integer 6; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.2.1.1.27.9*/ 
+		SnmpMibObject pktcNcsEndPntConfigCallWaitingDelay.9 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.2.1.1.28.9*/ 
+		SnmpMibObject pktcNcsEndPntConfigCallWaitingMaxRep.9 Integer 6; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.2.1.1.27.9*/ 
+		SnmpMibObject pktcNcsEndPntConfigCallWaitingDelay.9 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.2.1.2.1.1.28.9*/ 
+		SnmpMibObject sipCallFeatureEnableVSC.9.speedDialling String "##" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.3.9.23*/ 
+		SnmpMibObject sipCallFeatureDisableVSC.9.speedDialling String "**" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.3.1.1.4.9.23*/ 
+		SnmpMibObject emtaEnableDQoSLite.0 Integer 1; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.1.7.0*/ 
+		SnmpMibObject snmpCommunityName.97.100.109.105.110 String "public" ; /*OID: .1.3.6.1.6.3.18.1.1.1.2.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunitySecurityName.97.100.109.105.110 String "admin" ; /*OID: .1.3.6.1.6.3.18.1.1.1.3.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunityContextName.97.100.109.105.110 String "" ; /*OID: .1.3.6.1.6.3.18.1.1.1.5.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunityTransportTag.97.100.109.105.110 String "adminTag" ; /*OID: .1.3.6.1.6.3.18.1.1.1.6.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunityStorageType.97.100.109.105.110 Integer 2; /*OID: .1.3.6.1.6.3.18.1.1.1.7.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunityStatus.97.100.109.105.110 Integer 4; /*OID: .1.3.6.1.6.3.18.1.1.1.8.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrTDomain.'admin' ObjectID .1.3.6.1.6.1.1; /*OID: .1.3.6.1.6.3.12.1.2.1.2.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrTAddress.'admin' HexString 0xAC10007000A2; /*OID: .1.3.6.1.6.3.12.1.2.1.3.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrTagList.'admin' String "adminTag" ; /*OID: .1.3.6.1.6.3.12.1.2.1.6.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrStorageType.'admin' Integer 2; /*OID: .1.3.6.1.6.3.12.1.2.1.8.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrParams.'admin' String "admin" ; /*OID: .1.3.6.1.6.3.12.1.2.1.7.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrRowStatus.'admin' Integer 4; /*OID: .1.3.6.1.6.3.12.1.2.1.9.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrTMask.'admin' HexString 0x000000000000; /*OID: .1.3.6.1.6.3.18.1.2.1.1.97.100.109.105.110*/ 
+		SnmpMibObject snmpTargetAddrMMS.'admin' Integer 0; /*OID: .1.3.6.1.6.3.18.1.2.1.2.97.100.109.105.110*/ 
+		SnmpMibObject snmpCommunityName.111.112.101.114.97.116.111.114 String "private" ; /*OID: .1.3.6.1.6.3.18.1.1.1.2.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpCommunitySecurityName.111.112.101.114.97.116.111.114 String "operator" ; /*OID: .1.3.6.1.6.3.18.1.1.1.3.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpCommunityContextName.111.112.101.114.97.116.111.114 String "" ; /*OID: .1.3.6.1.6.3.18.1.1.1.5.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpCommunityTransportTag.111.112.101.114.97.116.111.114 String "operatorTag" ; /*OID: .1.3.6.1.6.3.18.1.1.1.6.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpCommunityStorageType.111.112.101.114.97.116.111.114 Integer 2; /*OID: .1.3.6.1.6.3.18.1.1.1.7.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpCommunityStatus.111.112.101.114.97.116.111.114 Integer 4; /*OID: .1.3.6.1.6.3.18.1.1.1.8.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrTDomain.'operator' ObjectID .1.3.6.1.6.1.1; /*OID: .1.3.6.1.6.3.12.1.2.1.2.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrTAddress.'operator' HexString 0xAC10007000A2; /*OID: .1.3.6.1.6.3.12.1.2.1.3.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrTagList.'operator' String "operatorTag" ; /*OID: .1.3.6.1.6.3.12.1.2.1.6.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrStorageType.'operator' Integer 2; /*OID: .1.3.6.1.6.3.12.1.2.1.8.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrParams.'operator' String "operator" ; /*OID: .1.3.6.1.6.3.12.1.2.1.7.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrRowStatus.'operator' Integer 4; /*OID: .1.3.6.1.6.3.12.1.2.1.9.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrTMask.'operator' HexString 0x000000000000; /*OID: .1.3.6.1.6.3.18.1.2.1.1.111.112.101.114.97.116.111.114*/ 
+		SnmpMibObject snmpTargetAddrMMS.'operator' Integer 0; /*OID: .1.3.6.1.6.3.18.1.2.1.2.111.112.101.114.97.116.111.114*/ 
+		MtaConfigDelimiter       255;
+}

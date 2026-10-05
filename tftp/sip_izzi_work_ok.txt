@@ -1,0 +1,254 @@
+Main 
+{
+		MtaConfigDelimiter  1;
+		SnmpMibObject mib-2.140.1.1.6.0 Integer 1; /*OID: .1.3.6.1.2.1.140.1.1.6.0*/ 
+		SnmpMibObject ifAdminStatus.9 Integer 1; /*OID: .1.3.6.1.2.1.2.2.1.7.9*/ 
+		SnmpMibObject ifAdminStatus.10 Integer 2; /*OID: .1.3.6.1.2.1.2.2.1.7.10*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.2.1.2.1 String "10.0.0.150" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.2.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.3.1.1 String "10.0.0.150" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.3.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.3.1 String "101" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.3.1.3.1 String "101" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.3.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.3.1.5.1 String "101101" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.3.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.1.1.2.1 String "PCMA,PCMU,G729" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.3.1.1.2.1 Digit Map 0x54494D455220533D340D0A54494D4552205A3D322E300D0A0D0A646F6D61696E203D202240696D732E697A7A692E6D78220D0A6469616C50686F6E65203D20223B757365723D70686F6E65220D0A6469616C537472696E67203D20223B757365723D6469616C737472696E67220D0A0D0A4D4150204D61696E5461626C65203D0D0A2022285B312D395D787B397D295322203A20204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A2022283031787B31307D295322203A204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A2022283030787B372D31357D295322203A204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A2022285B302D392A235D5B302D392A235D295322203A204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A2022285B302D392A235D5B302D392A235D5B302D392A235D295322203A204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A202228383030787B377D295322203A204D414B452D43414C4C2028227369703A22202331203D646F6D61696E203D6469616C50686F6E65290D0A202230323022203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230343022203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230353122203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230353522203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230353622203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230367822203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230377822203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230387822203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A202230397822203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A20222A31323322203A204D414B452D43414C4C2028227369703A22202330203D646F6D61696E203D6469616C537472696E67290D0A2022283D5653437329222020202020203A2052455455524E0D0A0D0A4D41502056534373203D200D0A20222A333122203A2041522D414354495641544528233029; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.3.1.1.2.1*/
+		SnmpMibObject clabProjPacketCable.10.3.1.1.2.1.11.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.2.1.11.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.2.1.1 Integer 16; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.2.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.4.1.1 Gauge32 5060; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.4.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.5.1.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.5.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.8.1.1 Gauge32 500; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.8.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.9.1.1 Gauge32 4000; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.9.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.10.1.1 Gauge32 5000; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.10.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.11.1.1 Gauge32 32000; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.11.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.12.1.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.12.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.13.1.1 Gauge32 2; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.13.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.14.1.1 Gauge32 1800; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.14.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.15.1.1 Gauge32 30; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.15.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.16.1.1 Gauge32 90; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.16.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.3.1.1.4.1.17.1.1 Gauge32 900; /*OID: .1.3.6.1.4.1.4491.2.2.10.3.1.1.4.1.17.1.1*/ 
+		SnmpMibObject eueMgmtBase.5.0 Integer 3; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.5.0*/ 
+		SnmpMibObject eueMgmtBase.15.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.15.0*/ 
+		SnmpMibObject eueMgmtBase.19.0 HexString 0x98; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.19.0*/ 
+		SnmpMibObject eueMgmtBase.20.0 HexString 0xF013C0; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.20.0*/ 
+		SnmpMibObject eueMgmtBase.21.0 String "P" ; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.21.0*/ 
+		SnmpMibObject eueMgmtBase.24.0 HexString 0xA000; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.1.24.0*/ 
+		SnmpMibObject emtaEnableDQoSLite.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.1.7.0*/ 
+		SnmpMibObject sipDeviceConfigToTagMatchingEnabled.0 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.6.8.1.34.0*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.32.9 Gauge32 80; /*OID: .1.3.6.1.2.1.169.1.2.1.1.32.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.33.9 Gauge32 805; /*OID: .1.3.6.1.2.1.169.1.2.1.1.33.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.34.9 Gauge32 110; /*OID: .1.3.6.1.2.1.169.1.2.1.1.34.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.35.9 Gauge32 25; /*OID: .1.3.6.1.2.1.169.1.2.1.1.35.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.36.9 Gauge32 55; /*OID: .1.3.6.1.2.1.169.1.2.1.1.36.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.37.9 Gauge32 45; /*OID: .1.3.6.1.2.1.169.1.2.1.1.37.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.38.9 Gauge32 75; /*OID: .1.3.6.1.2.1.169.1.2.1.1.38.9*/ 
+		SnmpMibObject eueMgmtRSTCallWaitIndex.1 Integer 2; /*OID: .1.3.6.1.4.1.4413.2.2.2.1.12.4.1.3.1.1.1.1*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.27.9 Gauge32 4; /*OID: .1.3.6.1.2.1.169.1.2.1.1.27.9*/ 
+		SnmpMibObject mib-2.169.1.2.1.1.28.9 Gauge32 2; /*OID: .1.3.6.1.2.1.169.1.2.1.1.28.9*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.4.1 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.6.1 String "1" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.6.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.11.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.11.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.13.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.13.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.2.1.12.1 String "IEP#9;OEP#9" ; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.2.1.12.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.3.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.3.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.3.1.4.1 Integer 3; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.3.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.3.1.6.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.3.1.6.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.4.1.2.1.1 Gauge32 4491; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.4.1.2.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.4.1.3.1.1 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.4.1.3.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.4.1.4.1.1 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.4.1.4.1.1*/ 
+		SnmpMibObject clabProjPacketCable.10.4.1.1.4.1.9.1.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.10.4.1.1.4.1.9.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.1 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.3.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.3.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.2 Integer 3; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.2*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.2 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.2*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.2 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.2*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.2 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.2*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.1.1 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.2.1 Gauge32 30; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.3.1 String "file:///PacketCableRST/bz" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.4.1 Gauge32 30; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.5.1 String "file:///PacketCableRST/ot" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.6.1 Gauge32 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.6.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.7.1 String "file:///PacketCableRST/ot" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.7.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.8.1 Gauge32 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.8.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.9.1 String "file:///PacketCableRST/ot" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.9.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.10.1 Gauge32 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.10.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.11.1 Gauge32 20; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.11.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.12.1 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.12.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.13.1 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.13.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.14.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.14.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.15.1 Gauge32 16; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.15.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.16.1 String "file:///PacketCableRST/ot" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.16.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.17.1 Gauge32 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.17.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.1.2.1.18.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.1.2.1.18.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.3 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.3*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.3 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.3*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.3 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.3*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.3 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.3*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.1.1.2.1 String "en-us" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.2.1.1.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.2.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.2.1.2.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.2.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.2.1.3.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.2.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.2.1.4.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.2.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.2.2.1.5.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.2.2.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.4 Integer 5; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.4*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.4 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.4*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.4 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.4*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.4 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.4*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.3.1.1.2.1 Gauge32 3600; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.3.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.3.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.3.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.5 Integer 6; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.5*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.5 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.5*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.5 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.5*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.5 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.5*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.4.1.1.2.1 Gauge32 60; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.4.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.4.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.4.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.6 Integer 7; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.6*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.6 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.6*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.6 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.6*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.6 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.6*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.5.1.1.2.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.5.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.5.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.5.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.7 Integer 8; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.7*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.7 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.7*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.7 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.7*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.7 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.7*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.6.1.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.6.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.6.1.1.3.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.6.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.6.1.1.4.1 String "1" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.6.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.6.1.1.5.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.6.1.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.8 Integer 9; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.8*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.8 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.8*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.8 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.8*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.8 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.8*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.9 Integer 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.9*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.9 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.9*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.9 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.9*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.9 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.9*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.10 Integer 11; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.10*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.10 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.10*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.10 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.10*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.10 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.10*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.1.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.1.1.3.1 Gauge32 3600; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.1.1.4.1 String "com.cablelabs.pkt.rst.featureset.1" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.1.1.5.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.1.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.5.1.2.1.1 Integer 3002; /*OID: .1.3.6.1.4.1.4491.2.2.8.5.1.2.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.2.1.1.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.2.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.9.2.1.2.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.9.2.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.11 Integer 12; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.11*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.11 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.11*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.11 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.11*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.11 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.11*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.10.1.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.10.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.10.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.10.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.10.1.1.4.1 Gauge32 10; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.10.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.12 Integer 13; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.12*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.12 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.12*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.12 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.12*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.12 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.12*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.13 Integer 14; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.13*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.13 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.13*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.13 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.13*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.13 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.13*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.12.1.1.2.1 Gauge32 60; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.12.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.12.1.1.3.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.12.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.12.1.1.4.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.12.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.12.1.1.5.1 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.12.1.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.14 Integer 15; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.14*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.14 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.14*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.14 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.14*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.14 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.14*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.15 Integer 16; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.15*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.15 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.15*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.15 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.15*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.15 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.15*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.13.1.1.2.1 String "file:///PacketCableRST/cf" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.13.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.13.1.1.3.1 String "file:///PacketCableRST/cf" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.13.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.13.1.1.4.1 String "com.cablelabs.pkt.rst.featureset.1" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.13.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.13.1.1.5.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.13.1.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.16 Integer 17; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.16*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.16 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.16*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.16 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.16*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.16 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.16*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.17 Integer 18; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.17*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.17 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.17*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.17 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.17*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.17 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.17*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.14.1.1.1.1 Gauge32 3600; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.14.1.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.14.1.1.2.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.14.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.18 Integer 19; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.18*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.18 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.18*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.18 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.18*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.18 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.18*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.15.1.1.8.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.15.1.1.8.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.19 Integer 20; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.19*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.19 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.19*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.19 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.19*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.19 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.19*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.20 Integer 21; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.20*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.20 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.20*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.20 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.20*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.20 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.20*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.17.1.1.1.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.17.1.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.17.1.1.2.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.17.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.21 Integer 22; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.21*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.21 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.21*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.21 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.21*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.21 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.21*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.18.1.1.1.1 Gauge32 45; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.18.1.1.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.18.1.1.2.1 Gauge32 3; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.18.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.18.1.1.3.1 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.18.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.18.1.1.4.1 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.18.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.18.1.1.5.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.18.1.1.5.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.22 Integer 23; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.22*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.22 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.22*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.22 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.22*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.22 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.22*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.19.1.1.2.1 Integer 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.19.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.19.1.1.3.1 String "com.cablelabs.pkt.rst.featureset.1" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.19.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.19.1.1.4.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.19.1.1.4.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.23 Integer 24; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.23*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.23 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.23*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.23 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.23*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.23 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.23*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.24 Integer 25; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.24*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.24 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.24*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.24 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.24*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.24 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.24*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.25 Integer 26; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.25*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.25 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.25*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.25 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.25*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.25 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.25*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.26 Integer 27; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.26*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.26 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.26*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.26 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.26*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.26 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.26*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.27 Integer 28; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.27*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.27 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.27*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.27 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.27*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.27 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.27*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.28 Integer 29; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.28*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.28 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.28*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.28 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.28*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.28 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.28*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.29 Integer 30; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.29*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.29 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.29*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.29 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.29*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.29 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.29*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.21.1.1.3.1.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.21.1.1.3.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.21.1.1.4.1.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.21.1.1.4.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.21.1.1.5.1.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.21.1.1.5.1.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.3.1.30 Integer 31; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.3.1.30*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.4.1.30 Gauge32 1; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.4.1.30*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.5.1.30 Integer 2; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.5.1.30*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.1.2.1.9.1.30 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.1.2.1.9.1.30*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.22.1.1.2.1 String "" ; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.22.1.1.2.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.22.1.1.3.1 Gauge32 0; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.22.1.1.3.1*/ 
+		SnmpMibObject clabProjPacketCable.8.2.1.2.22.1.1.4.1 Integer 4; /*OID: .1.3.6.1.4.1.4491.2.2.8.2.1.2.22.1.1.4.1*/ 
+		MtaConfigDelimiter       255;
+}
