@@ -116,6 +116,18 @@ SERVICES = [
         "user": None,
         "pass": None,
         "description": "Monitor SSH de logs con palabras claves"
+    },
+{
+        "id": "Exploit",
+        "name": "Nmap y Exploit",
+        "host": SERVER_IP,
+        "port": 9039,
+        "url": f"http://{SERVER_IP}:9039",
+        "icon": "bi-cpu-fill",
+        "color": "warning",
+        "user": None,
+        "pass": None,
+        "description": "Nmap Puertos y Exploit"
     }
 ]
 
