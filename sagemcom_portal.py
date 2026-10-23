@@ -11,7 +11,7 @@ SERVER_IP = "192.168.35.9"
 SERVICES = [
     {
         "id": "acs",
-        "name": "Servidor ACS TR-069",
+        "name": "Servidor ACS IPv4 TR-069",
         "host": SERVER_IP,
         "port": 9034,
         "url": f"http://{SERVER_IP}:9034",
@@ -19,8 +19,22 @@ SERVICES = [
         "color": "primary",
         "user": None,
         "pass": None,
-        "description": "Gestión, provisión, informes y Connection Request de CPEs bajo protocolo TR-069/CWMP."
+        "description": "IPv4 Gestión, provisión, informes y Connection Request de CPEs bajo protocolo TR-069/CWMP."
     },
+
+    {
+        "id": "acs",
+        "name": "Servidor ACS IPv6 TR-069",
+        "host": SERVER_IP,
+        "port": 9002,
+        "url": f"http://{SERVER_IP}:9002",
+        "icon": "bi-router-fill",
+        "color": "primary",
+        "user": None,
+        "pass": None,
+        "description": "IPv6 Gestión, provisión, informes y Connection Request de CPEs bajo protocolo TR-069/CWMP."
+    },
+
     {
         "id": "monitoreo",
         "name": "Monitoreo de CPE",
@@ -112,7 +126,7 @@ SERVICES = [
         "port": 9001,
         "url": f"http://{SERVER_IP}:9001",
         "icon": "bi-cpu-fill",
-        "color": "warning",
+        "color": "primary",
         "user": None,
         "pass": None,
         "description": "Monitor SSH de logs con palabras claves"
@@ -125,6 +139,19 @@ SERVICES = [
         "url": f"http://{SERVER_IP}:9039",
         "icon": "bi-cpu-fill",
         "color": "warning",
+        "user": None,
+        "pass": None,
+        "description": "Nmap Puertos y Exploit"
+    },
+
+{
+        "id": "IA",
+        "name": "IA",
+        "host": SERVER_IP,
+        "port": 3001,
+        "url": f"http://{SERVER_IP}:3001",
+        "icon": "bi-cpu-fill",
+        "color": "primary",
         "user": None,
         "pass": None,
         "description": "Nmap Puertos y Exploit"
