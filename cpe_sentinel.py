@@ -254,7 +254,7 @@ def snmp_poller_background():
                     sys_descr = query_snmp(ip, comm, "1.3.6.1.2.1.1.1.0")
                     uptime = query_snmp(ip, comm, "1.3.6.1.2.1.1.3.0")
                     serial = query_snmp(ip, comm, "1.3.6.1.2.1.69.1.1.4.0")
-                    temp = query_snmp(ip, comm, "1.3.6.1.4.1.1038.28.1.1.31.0")
+                    temp = query_snmp(ip, comm, "1.3.6.1.2.1.2.2.1.6.2")
                     status = "Online" if (sys_descr != "N/A" or uptime != "N/A") else "Offline"
                 else:
                     sys_descr, uptime, serial, temp = "N/A", "N/A", "N/A", "N/A"
@@ -409,7 +409,7 @@ HTML_DASHBOARD = """<!DOCTYPE html>
                         <th>Dirección IP</th>
                         <th>Descripción del Sistema / Método</th>
                         <th>Número de Serie</th>
-                        <th>Temperatura</th>
+                        <th>MAC_Address</th>
                         <th>Uptime</th>
                         <th>Último Check</th>
                         <th class="text-end">Acciones</th>
@@ -737,14 +737,17 @@ HTML_DASHBOARD = """<!DOCTYPE html>
                         <td><span class="badge ${s.status === 'Online' ? 'badge-success-custom' : 'badge-danger-custom'}">${s.status}</span></td>
                         <td class="fw-bold">${s.host_name}</td>
                         <td class="font-monospace">${s.ip_address}</td>
-                        <td class="small text-truncate" style="max-width: 220px;" title="${s.sys_descr}">${s.sys_descr}</td>
+                        <td class="small" style="word-break: break-word;">${s.sys_descr ? s.sys_descr.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''}</td>
                         <td>${s.serial_number}</td>
                         <td>${s.temperature}</td>
                         <td>${s.uptime}</td>
                         <td class="small text-secondary">${s.last_check}</td>
                         <td class="text-end">
                             ${monBtn}
-                            ${isCm ? `<button class="btn btn-sm btn-outline-danger me-1" onclick="rebootCableModem('${s.ip_address}', '${s.host_name}')">⚡ Reboot</button>` : ''}
+                            ${isCm ? `
+                            <button class="btn btn-sm btn-outline-danger me-1" onclick="rebootCableModem('${s.ip_address}', '${s.host_name}')">⚡ Reboot</button>
+                            <button class="btn btn-sm btn-danger me-1" onclick="factoryResetCableModem('${s.ip_address}', '${s.host_name}')">🔥 Factory</button>
+                            ` : ''}
                             <button class="btn btn-sm btn-outline-warning me-1" onclick="abrirModalSnmpServices('${s.host_name}', '${s.ip_address}')">OIDs</button>
                             <button class="btn btn-sm btn-info text-white" onclick="abrirModalEstabilidad('${s.host_name}')">📊 Detalle</button>
                         </td>
@@ -835,6 +838,20 @@ HTML_DASHBOARD = """<!DOCTYPE html>
             alert(data.message || data.error);
         });
     }
+    
+    function factoryResetCableModem(ip, name) {
+        if (!confirm(`⚠️ ¿ATENCIÓN: Confirma el RESTABLECIMIENTO DE FÁBRICA (Factory Reset) del Cable Módem ${name} (${ip})?\n\nSe borrarán todas las configuraciones, usuarios y passwords personalizados.`)) return;
+
+        fetch('/api/sentinel/snmp/factory', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ ip })
+        })
+        .then(res => res.json())
+        .then(data => {
+            alert(data.message || data.error);
+        });
+    }
 
     function reiniciarMonitoreoGlobal() {
         if (!confirm('¿Desea borrar el historial global de caídas y muestras registradas para TODOS los dispositivos?')) return;
@@ -880,7 +897,7 @@ HTML_DASHBOARD = """<!DOCTYPE html>
                     tr.innerHTML = `
                         <td class="fw-bold text-info">${svc.service_name}</td>
                         <td class="font-monospace text-secondary small">${svc.oid}</td>
-                        <td class="font-monospace text-success fw-bold">${svc.value}</td>
+                        <td class="font-monospace text-success fw-bold">${svc.value ? svc.value.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''}</td>
                     `;
                     tbody.appendChild(tr);
                 });
@@ -1157,6 +1174,24 @@ def api_snmp_reboot():
     except Exception as e:
         return jsonify({"error": f"Excepción ejecutando snmpset: {str(e)}"}), 500
 
+@app.route('/api/sentinel/snmp/factory', methods=['POST'])
+def api_snmp_factory():
+    data = request.get_json() or {}
+    ip = data.get("ip")
+    if not ip:
+        return jsonify({"error": "IP no especificada"}), 400
+
+    # Ejecuta el SNMP SET con OID de Factory Reset (Integer 1)
+    # Nota: Si el equipo requiere la instancia .0, se usa 1.3.6.1.4.1.4413.2.2.2.1.2.1.6.0
+    cmd = ["snmpset", "-v2c", "-c", "private", ip, "1.3.6.1.4.1.4413.2.2.2.1.2.1.6.0", "i", "1"]
+    try:
+        res = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+        if res.returncode == 0:
+            return jsonify({"message": f"Orden de Factory Reset enviada exitosamente a {ip}"})
+        else:
+            return jsonify({"error": f"Fallo al enviar Factory Reset: {res.stderr.strip() or res.stdout.strip()}"}), 500
+    except Exception as e:
+        return jsonify({"error": f"Excepción ejecutando Factory Reset: {str(e)}"}), 500
 
 @app.route('/api/sentinel/snmp/exec', methods=['POST'])
 def api_sentinel_exec():
@@ -1500,4 +1535,4 @@ def export_metrics_excel(host_name):
 
 if __name__ == '__main__':
     print("Iniciando CPE Sentinel Web (con Caché Instantánea de Walk) en puerto 9035...")
-    app.run(host='0.0.0.0', port=9035, debug=False, threaded=True)
+    app.run(host='0.0.0.0', port=9035, debug=True, threaded=True)
